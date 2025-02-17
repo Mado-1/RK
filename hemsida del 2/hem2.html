@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <!-- Anger teckenkodning och responsiv design -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurang Källaren</title>
+    <!-- Länk till extern CSS-fil för styling -->
+    <link rel="stylesheet" href="hem2.css">
+</head>
+<body>
+
+<header> 
+    <nav>
+        <!-- Logotyp för restaurangen -->
+        <a href="#" class="logo">
+            <img src="r1.jpg" alt="Restaurangens logotyp">
+        </a>
+        <ul>
+            <!-- Navigationsmeny med länkar till olika sektioner på sidan -->
+            <li><a href="#home" class="link">Home</a></li>
+            <li><a href="#about" class="link">About</a></li>
+            <li><a href="#quality" class="link">Offers</a></li>
+            <li><a href="#contact" class="link">Kontakt</a></li>
+        </ul>
+    </nav>
+</header>   
+
+<!-- Startsida -->
+<section class="home" id="home">
+    <div class="right">
+        <div class="hometext">
+            <h1>Kontakta oss för bästa buffé</h1>
+            <p>Vi erbjuder en mängd olika bufféer för alla tillfällen. Kontakta oss för att boka din buffé redan idag.</p>
+            <!-- Knapp som skrollar ner till kontaktsektionen -->
+            <button class="kontakt" onclick="window.location.href='#contact'">Kontakta oss</button>
+        </div>
+    </div>
+</section>
+
+<!-- Om oss sektion -->
+<section class="about" id="about">
+    <div class="abouttext">
+        <h2>Om oss</h2>
+        <p>Välkommen till vår restaurang där vi kombinerar det bästa från svensk och asiatisk husmanskost i en smakrik buffé.
+            Här hittar du både traditionella svenska rätter och asiatiska favoriter, allt tillagat med färska ingredienser och kärlek.
+            Vår buffé erbjuder något för alla. 
+            Kom och upplev en unik smakresa där två matkulturer möts!".</p>
+    </div>
+</section>
+
+<!-- Matkvalitet sektion -->
+<section class="quality" id="quality">
+    <div class="qaltext">
+        <h2>Mat av högsta kvalitet</h2>
+        <p>Vi använder endast de bästa råvarorna i vår matlagning. 
+            Vår buffé är fylld med färska grönsaker, kryddor och kryddor som ger dig en smakupplevelse utöver det vanliga.
+            Vi är stolta över att kunna erbjuda mat av högsta kvalitet till våra gäster.</p>
+    </div>
+</section>
+
+<!-- Hitta hit sektion med Google Maps iframe -->
+<section id="traveltips">
+    <div class="test">
+        <h2>Hitta hit</h2>
+        <p> Välkommen till oss på Drivhjulsvägen 30 i Västberga, Hägersten! 
+            Här är all information du behöver för att ta dig hit så enkelt som möjligt. 
+            Oavsett om du kommer med bil, kollektivtrafik, cykel eller till fots, finns det smidiga alternativ för alla.
+            Det finns gott om platser att parkera på i närheten av restaurangen.
+            Det är endast 3 minuter promenad från närmaste busshållplats. Du går av i elktravägen sedan promenerar du 3 minuter till restaurangen</p>
+    </div>
+    <div class="test">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4074.462659220774!2d18.013659157641598!3d59.29569364623438!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f77aec08d4603%3A0x1f8a52e7b2eb6548!2sRestaurangk%C3%A4llaren!5e0!3m2!1ssv!2sse!4v1738578602458!5m2!1ssv!2sse" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</section>
+
+<!-- Kontaktformulär -->
+<section id="contact">
+    <h2>Kontakta oss</h2>
+    <form action="#" method="post" class="contact-form">
+        <label for="name">Namn:</label>
+        <input type="text" id="name" name="name" placeholder="Skriv ditt namn här..." required>
+
+        <label for="email">E-post:</label>
+        <input type="email" id="email" name="email" placeholder="Skriv din e-postadress här..." required>
+
+        <label for="message">Meddelande:</label>
+        <textarea id="message" name="message" placeholder="Skriv ditt meddelande här..." rows="5" required></textarea>
+
+        <button type="submit">Skicka</button>
+    </form>
+</section>
+
+<!-- Sidfot med kontaktinformation -->
+<footer>
+    <p>Kontakt: info@restaurangkällaren.com | Följ oss på Facebook</p>
+</footer>
+
+<!-- Knapp för att scrolla till toppen -->
+<button id="backToTop">⬆️ Till toppen</button>
+
+<!-- Länkar till extern JavaScript-fil -->
+<script src="hem2.js"></script>
+</body>
+</html>
